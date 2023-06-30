@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@100&display=swap" rel="stylesheet">
+  
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0 auto;
+        font-family: 'Ysabeau SC', sans-serif;
+        text-align: center;
+         justify-content: center;
+        align-items: center;
+    }
+    form {
+       
+     
+        width:200px;
+        padding: 50px 400px 100px 550px;
+    }
+    input[type=text] {      
+  padding:10px;
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+button {
+appearance:none;
+-webkit-appearance:none;
+padding:10px;
+border:none;
+background-color:#3F51B5;
+color:#fff;
+font-weight:600;
+border-radius:5px;
+width:100%;
+
+}
+
+h1 {
+    text-align: center;
+   
+    margin: 60px;
+}
+a {
+    font-size: 20px;
+}
+
+</style>
+<body>
+    <h1>Register New Employee</h1>
+    <a href="/employees">home</a>
+     
+
+    <form action="/employees" method="POST">
+        <input type="text" name="firstName" placeholder="Fist Name" />
+        <input type="text" name="lastName" placeholder="Last Name " />
+        <input type="text" name="email" placeholder="Email" />
+        <input type="text" name="date" placeholder="Date" />
+        <input type="text" name="jobTitle" placeholder="Job Title" />
+        <button type="submit"> Add Employee </button>
+
+    </form>
+    
+</body>
+</html>

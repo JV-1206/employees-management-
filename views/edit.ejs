@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@100&display=swap" rel="stylesheet">
+  
+    <title>Document</title>
+
+    <style>
+        .table {
+            display: grid;
+            grid-template-columns: 30vmin;
+            gap: 1vmin;
+            font-size: 60px;
+            
+            justify-content: center;
+            align-items: center;
+         
+        }
+
+        input {
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 15px;
+            color: gray;
+            box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+            border: hidden;
+        }
+
+        h1 {
+            margin: 10vmin;
+            text-align: center;
+            font-family: 'Ysabeau SC', sans-serif;
+            text-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+        }
+        .button {
+    appearance:none;
+    -webkit-appearance:none;
+    padding:10px;
+    border:none;
+    background-color:#3F51B5;
+    color:#fff;
+    font-weight:600;
+    border-radius:5px;
+    width:100%;
+        }
+        a{
+            margin: 10vmin;
+            text-align: center;
+            font-family: 'Ysabeau SC', sans-serif;
+            text-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1> Update Employee Information</h1>
+    <a href="/employees">home</a>
+    <form class ="table" action="/employees/<%=employee.id%>?_method=PUT" method="POST">
+        <input class= "test" type="text" name="firstName" value="<%=employee.firstName%>"/>
+        <input type="text" name="lastName" value="<%=employee.lastName%>"/>
+        <input type="text" name="email" value="<%=employee.email%>"/>
+        <input type="text" name="date" value="<%=employee.date%>"/>
+        <input type="text" name="jobTitle" value="<%=employee.jobTitle%>"/>
+        <input class="button" type="submit"/>
+      </form>
+</body>
+</html>

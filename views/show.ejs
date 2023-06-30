@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@100&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            text-justify: left;
+            text-align: center;
+            
+        }
+
+        h1 {
+
+            font-size: 50px;
+            font-family: 'Ysabeau SC', sans-serif;
+            margin: 50px;
+        }
+
+        p {
+            font-size: 30px;
+            margin: 30px;
+            
+        }
+
+        a {
+            font-size: 20px;
+             margin: 70px;
+        }
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <header></header>
+    <h1>Employee Information</h1>
+    <nav>
+    <a href="/employees">HOME</a>    |    <a href="/employees/edit/<%=employee.id%>">Update Employee</a>
+    </nav>
+    <p>First Name: <%=employee.firstName%></p>
+    <p>Last Name: <%=employee.lastName%> </p>
+    <p>Email : <%=employee.email%> </p>
+    <p>Date: <%=employee.date%> </p>
+    <p>Employee ID: <%=employee.id%></p>
+    <p>Job Title: <%=employee.jobTitle%></p>
+
+   
+    
+
+</body>
+</html>
